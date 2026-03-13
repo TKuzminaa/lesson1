@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffb6c1;
+            font-family: Arial, sans-serif;
+        }
+        .cloud {
+            background: white;
+            padding: 40px 60px;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .cloud::before,
+        .cloud::after {
+            content: '';
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+        }
+        .cloud::before {
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            left: 50px;
+        }
+        .cloud::after {
+            width: 80px;
+            height: 80px;
+            top: -50px;
+            right: 50px;
+        }
+        .cloud span {
+            font-size: 48px;
+            color: #333;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="cloud">
+        <span>Привет</span>
+    </div>
+</body>
+</html>
